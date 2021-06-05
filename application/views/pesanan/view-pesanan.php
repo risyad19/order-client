@@ -44,8 +44,9 @@
 								<tbody>
 										<?php 
 											$no = 1;
-											foreach($pesanan as $row)
-											{
+											if( !empty($pesanan) ) {
+												foreach($pesanan as $row)
+												{
                                                
 										?>								
 												<tr>
@@ -73,6 +74,7 @@
 													</td>
 												</tr>
 										<?php
+												}
 											}
 										?>									
 								</tbody>

@@ -59,9 +59,14 @@
                                             <label class="form-label"> Pilih Menu</label>
                                             <select class="form-control select2-show-search" name="daftarmenu"  id="daftarmenu" data-placeholder="Choose one (with searchbox)">                                                
                                                 <option value=""></option>
-                                                <?php foreach($daftarMenu as $menu) :?>
+                                                <?php 
+                                                    if( !empty($daftarMenu) ) {
+                                                        foreach($daftarMenu as $menu) :
+                                                ?>
                                                     <option value="<?= $menu['id'].' | '. $menu['nama']?>"><?= $menu['nama'] ?></option>
-                                                <?php endforeach; ?>
+                                                <?php endforeach; 
+                                                    }
+                                                ?>
                                             </select>
                                         </div>
                                         <div class="row">

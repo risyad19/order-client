@@ -42,8 +42,9 @@
 								<tbody>
 										<?php 
 											$no = 1;
-											foreach($menus as $row)
-											{
+											if( !empty($menus) ) {
+												foreach($menus as $row)
+												{
 										?>								
 												<tr>
 													<th scope="row"><?= $no++;?></th>
@@ -68,6 +69,7 @@
 													</td>
 												</tr>
 										<?php
+												}
 											}
 										?>									
 								</tbody>

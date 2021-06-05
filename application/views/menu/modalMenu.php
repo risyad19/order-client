@@ -1,5 +1,6 @@
 <!-- START DELETE -->
 <?php
+	if( !empty($menus) ) {
 	foreach($menus as $row)
 	{
 ?>
@@ -22,5 +23,6 @@
 </div>
 <?php
 	}
+}
 ?>
 <!-- END DELETE
